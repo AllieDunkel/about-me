@@ -87,8 +87,9 @@ function askAboutCats() {
         alert(`Did not answer a valid response.`);
     }
 }
+//This code works 
 
-This code works 
+
 function playGame() {
     let finished = false
     let maxAttempts = 4;
@@ -120,33 +121,35 @@ var userPoints = 0;
 var foodILike;
 
 
-// function initialize () {
-//     console.log(`In initialize()`);
-// foodILike = ["nachos", "cookies", "chicken", "steak"];
-// }
+function initialize () {
+    console.log(`In initialize()`);
+foodILike = ["nachos", "cookies", "chicken", "steak"];
+}
 
 
-// function playGame () {
-//     console.log(`in playGame()`);
-//     let finished = false
-//     let maxAttempts = 6
-//     let goalAnswer = (foodILike)
-//     let currentAttempt = 0
-//     let output = " ";
-//     let question = "Name one of my favorite foods?"
-//     while (currentAttempt < maxAttempts && !finished) {
-//         currentAttempt++;
-//     let answer = prompt ("Name one of my favorite foods?").toLowerCase();
-//     let result = "Wrong!";
-//     } if(foodILike.includes(answer)){ 
-//         userPoints++;
-//         result= `You have ${userPoints} points.`;
-//     } else if (foodILike != output) {
-//         result = "Correct!"
-//         finished= true
-// alert(result);
-// }
-// }
+function playGame () {
+    console.log(`in playGame()`);
+    let finished = false;
+    let maxAttempts = 6;
+    let goalAnswer = foodILike;
+    let currentAttempt = 0
+    let output = " ";
+    let question = "Name one of my favorite foods?"
+    while (currentAttempt < maxAttempts && !finished) {
+        currentAttempt++;
+    let answer = prompt ("Name one of my favorite foods?").toLowerCase();
+    let result = "Wrong!";
+     if(foodILike.includes(answer)){ 
+        userPoints++;
+        result= `You have ${userPoints} points.`;
+        finished= true
+    }
+
+    alert(result);
+} //end of while
+alert("Favorites: " + foodILike.toString())
+}
+
 
 
 
