@@ -14,6 +14,8 @@ let increaseScore= 0;
 var pleaseAskUsername;
 var userPoints = 0;
 var foodILike;
+let score=0;
+
 
 function playGame(){
     let questions=[
@@ -24,8 +26,7 @@ function playGame(){
         ["Am I a cat person? Type Y/N.", "Y"]
     ];
 
-    let score=0;
-
+   
     for(let i=0; i < questions.length; i++) {
 
         let userQuestion = prompt(questions[i][0]).toUpperCase();
@@ -44,11 +45,11 @@ function playGame(){
 
 }
 
-function pleaseAskUsername() {
-    let user = prompt("What is your name?");
-    //console.log(`The name is ${user}`);
-    alert(`Welcome ${user}!`);
-}
+// function playGame() {
+//     let user = prompt("What is your name?");
+//     //console.log(`The name is ${user}`);
+//     alert(`Welcome ${user}!`);
+// }
 
 
 

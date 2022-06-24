@@ -5,11 +5,20 @@ DATE: 2022-06-22
 
 * {
     box-sizing: border-box;
+
 }
 
 h1 {
     font-size: 2rem;
-    margin: 1rem
+    margin: 1rem 
+    
+}
+
+header {   
+ 
+ background-color: lightblue;
+ text-align: center;
+ 
 }
 
 h2, h3 {
@@ -18,14 +27,16 @@ h2, h3 {
 
 section {
     border: 15px solid black;
+    margin: auto;
     width: 80%;
-    margin: 5rem auto 0 auto;
-    position: static;
+    position: static
+    padding: 70px 0;
 
 }
+
+
 
 body{
-    background-color: aliceblue;
+    background-color: lavender;
     margin: 0 auto;
 }
-
